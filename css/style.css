@@ -2,6 +2,7 @@
     margin: 20px;
     font-family: 'DM Sans', sans-serif;
 }
+
 .nav-bar{
     display: flex;
     flex-direction: row;
@@ -22,10 +23,9 @@
     flex-direction: row;
 }
 .row-process{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    width: 90%;
 }
 .column-process{
     flex: 1;
@@ -38,3 +38,19 @@
 .card-container{
     padding: 10px;
 }
+.row-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column-gallery {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column-gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
