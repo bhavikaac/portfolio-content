@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="design-agency website">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="#">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Mono&display=swap" rel="stylesheet">
+	<title>SandBox</title>
+</head>
+
+<body>
+	<header>
+		<nav class="nav-bar">
+			<figure class="sandbox">
+				<img src="img/logo.svg" alt="logo image" width="200px" height="auto">
+			</figure>	
+			<ul>
+				<a href = "index.html">Home</a>
+				<a href = "projects.html">Projects</a>
+				<a href = "getquote.html">Get Quote</a>
+				<a href = "aboutus.html">About</a>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="hero">
+			<div class="hero-content">
+				<h1>Analyze. Design. Iterate.</h1>
+				<p>We believe in creating simple, intuitive, digital products that help boost your traditional business.</p>
+				<div class="stats">
+					<figure>
+						<img src="img/growth.svg" width="75px" height="75px"/>
+						<figcaption>150+ clients</figcaption>
+					</figure>
+					<figure>
+						<img src="img/conversion.svg" width="75px" height="75px"/>
+						<figcaption>1B+ Lives Touched</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<figure>
+				<img src="img/banner.svg" width="500px" height="auto"/>
+				<figcaption></figcaption>
+			</figure>
+		</div>
+
+		<h1>Our Process</h1>
+			<div class = "row-process">
+				<div class="column-process">
+					<figure class="card">
+						<img src="img/ideate.svg" alt="A bulb that represents ideas." width="100px" height="150px">
+						<figcaption class="card-container">Understand the problem, it's root cause and analyze given data.</figcaption>
+					</figure>
+				</div>
+				<div class="column-process">
+					<figure class="card">
+						<img src="img/target.svg" alt="A dart target board." width="100px" height="150px">
+						<figcaption class="card-container">Narrow down the scope, brainstorm and come up with a solution.</figcaption>
+					</figure>
+				</div>
+				<div class="column-process">
+					<figure class="card">
+						<img src="img/rocket.svg" alt="A picture of a rocket." width="100px" height="150px">
+						<figcaption class="card-container">Build and deploy using latest frond-end and backend development tools.</figcaption>
+					</figure>
+				</div>
+			</div>
+
+	<h1>Curated Projects</h1>
+		<ul class="row-process">
+		<div class="column-process">
+			<figure class="card">
+				<img src="img/project-1.svg" width="300px" height="auto" alt="Illustration for a project."/>
+				<figcaption class="card-container">Re-designing the "Druuv" E-Commerce website for better visibility.</figcaption>
+				<p>The project led to 20% increase in he adoption of the Druuv Website.</p>
+				<input type="button" id="view" name="view" value="View More">
+			</figure>
+		</div>
+		<div class="column-process">
+			<figure class="card">
+				<img src="img/project-2.svg" width="300px" height="auto" alt="Illustration for a project."/>
+				<figcaption class="card-container">Website Design project.</figcaption>
+				<p>Usher is a unique OTT platform that provides regional TV content to users. The team was involved in the research and developement of the redesign project.</p>
+				<input type="button" id="view" name="view" value="View More">
+			</figure>
+		</div>
+		</ul>
+
+		<h1>Interested in our work?</h1>
+		<p>Connect with our team to discuss further.</p>
+		<form>
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name"><br>
+			<label for="desc">Description:</label><br>
+			<input type="text" id="desc" name="desc"><br>
+			<input type="button" id="getq" name="getq" value="Get Quote">
+		  </form>
+	</main>
+
+	<footer>
+		&copy; 2022
+	</footer>
+</body>
+</html>
