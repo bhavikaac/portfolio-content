@@ -19,6 +19,10 @@
     align-items: center;
     justify-content: space-between;
 }
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+}
 .active{
     color: black;
     font-weight: 1000;
