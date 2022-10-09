@@ -2,55 +2,99 @@
     margin: 20px;
     font-family: 'DM Sans', sans-serif;
 }
-
+.skip a{
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+    color: black;
+}
+.skip a:focus{
+    top: 0;
+    position: absolute;
+    color: black;
+}
 .nav-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+.active{
+    color: black;
+    font-weight: 1000;
+}
+.nav-item:link{
+    color: #2a94f1;
+    text-decoration: none;
+}
+.nav-item:hover{
+    padding: 10px;
+    border: 3px solid #2a94f1;
+}
+
+/*Hero Content*/
 .hero{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
 }
 .hero-content{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    grid-area: 1 / span 1 / 1 / span 1;
 }
 .stats{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
 }
-.row-process{
-    display: flex;
-    align-items:flex-start;
-    width: 90%;
+.s1{
+    grid-column: 1 / span 1;
 }
-.column-process{
-    flex: 1;
-    width: 25%;
-    padding: 0 10px;
+.s2{
+    grid-column: 2 / span 1;
+}
+.banner{
+    grid-area: 1 / span 2 / 2 / span 1;
+}
+
+/*Process*/
+
+.process-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.column-process-1{
+    grid-column: 1 / span 1;
+}
+.column-process-2{
+    grid-column: 2 / span 1;
+}
+.column-process-3{
+    grid-column: 3 / span 1;
 }
 .card{
     text-align: center;
 }
-.card-container{
-    padding: 10px;
-}
+
+/*Gallery*/
 .row-gallery {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
-  
-  .column-gallery {
+}  
+.column-gallery {
     flex: 50%;
     padding: 0 4px;
-  }
-  
-  .column-gallery img {
+} 
+.column-gallery img {
     margin-top: 8px;
+    width: 25%;
     vertical-align: middle;
-  }
+}
+.column-gallery img:hover{
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #ACD4F7;
+}
   
