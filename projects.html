@@ -11,6 +11,7 @@
 	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Mono&display=swap" rel="stylesheet">
 	<title>SandBox - Project</title>
 </head>
@@ -29,17 +30,26 @@
 				<li><a class="nav-item" href = "aboutus.html">About</a></li>
 			</ul>
 		</nav>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6QRX76B8HG"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-6QRX76B8HG');
+		</script>
 	</header>
 
 	<main id="main">
-		<h1>Curated Projects</h1>
+		<h1><i class="fa fa-list"></i>Curated Projects</h1>
 		<ul class="project-container" style="list-style-type: none;">
 		<li>
 		<div class="column-process-1">
 			<figure class="card">
 				<img src="img/project-1.svg" width="300" style = "height: auto" alt="demo illustration for a project by the agency">
-				<figcaption>Re-designing the "Druuv" E-Commerce website for better visibility.</figcaption>
 			</figure>
+			<p><strong>Re-designing the "Druuv" E-Commerce website for better visibility:</strong></p>
 			<p>The project led to 20% increase in he adoption of the Druuv Website.</p>
 			<input type="button" id="view1" name="view1" value="View More">
 		</div>
@@ -48,8 +58,8 @@
 		<div class="column-process-2">
 			<figure class="card">
 				<img src="img/project-2.svg" width="300" style = "height: auto" alt="demo-illustration for a projectby the agency">
-				<figcaption>Website Design project.</figcaption>
 			</figure>
+			<p><strong>Website Design project:</strong></p>
 			<p>Usher is a unique OTT platform that provides regional TV content to users. The team was involved in the research and developement of the redesign project.</p>
 			<input type="button" id="view2" name="view2" value="View More">
 		</div>
