@@ -73,7 +73,26 @@ aside{
   @media (prefers-reduced-motion) {
     animation: none;
 }
-@media only screen and (min-width: 700px){
+
+@media only screen and (min-width: 768px){
+    .nav-bar ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    /*Hero Content*/
+    .hero{
+        display: flex;
+    }
+    .stats{
+        display: flex;
+        flex-direction: row;
+    }
+
+    }
+
+
+@media only screen and (min-width: 992px){
 .nav-bar{
     display: flex;
     flex-direction: row;
