@@ -62,7 +62,8 @@ body{
     box-shadow: 10px 10px 5px #ACD4F7;
 }
 aside{
-    margin-left: 50px !important;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 
@@ -89,7 +90,7 @@ aside{
         flex-direction: row;
     }
 
-    }
+}
 
 
 @media only screen and (min-width: 992px){
@@ -103,7 +104,10 @@ aside{
     display: flex;
     flex-direction: row;
 }
-
+aside{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 /*Hero Content*/
 .hero{
