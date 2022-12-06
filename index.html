@@ -116,15 +116,35 @@
 		<h1>Interested in our work?</h1>
 		<p>Want to be partners in design? Looking for UX/UI research or product branding? 
 			Post your query now, and we'll get in touch with you soon!</p>
-		  <form action="https://formspree.io/f/xlevoand" method="POST">
+		  <form name= "myForm" onsubmit="return validateForm()" action="https://formspree.io/f/xlevoand" method="POST">
 			<label for="name">Name:</label><br>
 			<input type="text" id="name" name="name"><br>
 			<label for="email">E-Mail:</label><br>
-			<input type="email" id="email" name="email"><br>
+			<input type="text" id="email" name="email"><br>
 			<label for="desc">Description:</label><br>
 			<input type="text" id="desc" name="desc"><br>
 			<button type = "submit" id="getq" name="getq" value="Get Quote">Get Quote</button>
 		</form>
+		<script>
+		function validateForm() {
+			let x = document.forms["myForm"]["name"].value;
+			let y = document.forms["myForm"]["email"].value;
+			let z = document.forms["myForm"]["desc"].value;
+			var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+			if (x == "") {
+				alert("Name must be filled out");
+				return false;
+			}
+			if(!validRegex.test(y)){
+				alert("Invalid email address!");
+				return false;
+			}
+			if (z == "") {
+				alert("Please write a brief description, it helps us understand your requirements!");
+				return false;
+			}
+		}
+		</script>
 		&copy; 2022
 	</footer>
 </body>
